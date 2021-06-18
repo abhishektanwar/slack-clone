@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Hello from './Hello';
 import Home from './Home';
-
+import Chat from '../src/components/Chat'
 function App() {
   return (
     <div className="App">
@@ -14,10 +14,9 @@ function App() {
           <Header />
           <AppBody>
             <Sidebar />
-            asfs
             <Switch>
               {/* <Route exact path="/" component={Header} /> */}
-              <Route path="/home" component={()=> <Home />} />
+              <Route exact path="/" component={()=> <Chat />} />
             </Switch>
           </AppBody>
         
